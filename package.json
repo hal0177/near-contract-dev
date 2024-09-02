@@ -1,0 +1,28 @@
+{
+  "name": "near-contract-dev",
+  "version": "1.0.0",
+  "license": "(MIT AND Apache-2.0)",
+  "type": "module",
+  "scripts": {
+    "build": "near-sdk-js build src/contract.ts build/near-contract-dev.wasm",
+    "test": "$npm_execpath run build && ava -- ./build/near-contract-dev.wasm"
+  },
+  "dependencies": {
+    "@metamask/abi-utils": "^2.0.4",
+    "@metamask/utils": "^9.2.1",
+    "near-sdk-js": "1.0.0",
+    "web3": "^4.11.1",
+    "web3-eth-abi": "^4.2.3",
+    "web3-utils": "^4.3.1"
+  },
+  "devDependencies": {
+    "ava": "^6.1.3",
+    "near-workspaces": "^3.5.0",
+    "typescript": "^5.4.5"
+  },
+  "ava": {
+    "files": [
+      "sandbox-test/*.ava.js"
+    ]
+  }
+}
