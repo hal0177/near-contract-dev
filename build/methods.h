@@ -1,3 +1,0 @@
-DEFINE_NEAR_METHOD(encode_function_call)
-DEFINE_NEAR_METHOD(get_greeting)
-DEFINE_NEAR_METHOD(set_greeting)

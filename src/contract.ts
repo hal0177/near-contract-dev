@@ -7,6 +7,7 @@ class EncodeData {
 
   @view({})
   encode_function_call(): string {
+    // this is the ABI that represents: "function transfer(address recipient, uint256 amount)"
     const abi_transfer_fragment = {
       name: "transfer",
       type: "function",
